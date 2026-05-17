@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Интернет-магазин электроники</title>
+
+    <!-- Основной style макет сайта -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Иконки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+</head>
+<body>
+    
+    <!-- Баннер версии для слабовиядщих -->
+    <div id="accessibilityBanner" class="accessibility-banner" style="display: none;">
+        <p>Версия для слабовидящих активирована</p>
+    </div>
+ 
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <i class="fas fa-laptop"></i>
+                    <span>TechStore</span>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Поиск товаров...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+ 
+                <div class="header-actions">
+                    <button id="themeToggle" class="icon-btn" title="Сменить тему">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="accessibilityToggle" class="icon-btn" title="Версия для слабовидящих">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <button id="favoriteBtn" class="icon-btn" title="Избранное">
+                        <i class="fas fa-heart"></i>
+                        <span class="badge" id="favoriteBadge">0</span>
+                    </button>
+                    <button id="cartBtn" class="icon-btn" title="Корзина">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge" id="cartBadge">0</span>
+                    </button>
+                    <button id="profileBtn" class="icon-btn" title="Профиль">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Основная навигация сайта -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" data-page="home" class="active">Главная</a></li>
+                    <li><a href="#" data-page="catalog">Каталог</a></li>
+                    <li><a href="#" data-page="about">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ 
+    <!-- TODO: сделать оснвоной контент сайта -->
+ 
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 TechStore. Все права защищены.</p>
+        </div>
+    </footer>
+ 
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+ 
+    <script src="app.js"></script>
+</body>
+</html>
