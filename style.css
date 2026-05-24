@@ -1,0 +1,54 @@
+/* Основные переменные */
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #7c3aed;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --warning-color: #f59e0b;
+    
+    --bg-primary: #ffffff;
+    --bg-secondary: #f3f4f6;
+    --bg-tertiary: #e5e7eb;
+    
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+    --text-light: #9ca3af;
+    
+    --border-color: #d1d5db;
+    --shadow: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 25px rgba(0,0,0,0.15);
+    
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+ 
+/* Темная тема */
+body.dark-theme {
+    --bg-primary: #1f2937;
+    --bg-secondary: #111827;
+    --bg-tertiary: #374151;
+    
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --text-light: #9ca3af;
+    
+    --border-color: #4b5563;
+    --shadow: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-lg: 0 10px 25px rgba(0,0,0,0.5);
+}
+ 
+/* Версия для слабовидящих */
+body.accessibility-mode {
+    --font-size-base: 20px;
+    --font-size-large: 24px;
+    --spacing-base: 1.5rem;
+}
+ 
+body.accessibility-mode * {
+    font-size: var(--font-size-base) !important;
+    line-height: 1.8 !important;
+    letter-spacing: 0.05em !important;
+}
+ 
+body.accessibility-mode h1 { font-size: 32px !important; }
+body.accessibility-mode h2 { font-size: 28px !important; }
+body.accessibility-mode h3 { font-size: 24px !important; }
