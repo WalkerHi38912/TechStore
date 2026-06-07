@@ -515,3 +515,109 @@ body {
     padding: 20px 0;
     margin-top: 40px;
 }
+
+/* Адаптивная верстка */
+
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .header-top {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .catalog-layout,
+    .profile-layout,
+    .product-details {
+        grid-template-columns: 1fr;
+    }
+
+    .product-gallery .product-image {
+        height: 300px;
+        line-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .catalog-controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+    }
+
+    .auth-container,
+    .modal-content {
+        width: 95%;
+    }
+
+    .slider {
+        height: 250px;
+    }
+
+    .slide-content h2 {
+        font-size: 28px;
+    }
+
+    .slide-content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .product-gallery .product-image {
+        height: 220px;
+        line-height: 220px;
+        font-size: 60px;
+    }
+
+    .cart-item-image {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+
+    .summary-total {
+        font-size: 22px;
+    }
+}
